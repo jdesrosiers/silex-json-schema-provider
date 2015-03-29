@@ -1,0 +1,26 @@
+{
+    "name": "jdesrosiers/silex-json-schema-provider",
+    "description": "A Silex service provider for working with JSON Schema",
+    "keywords": ["silex", "JSON", "JSON Schema", "JSON Hyper-Schema", "json-schema", "hyper-schema", "jsv4"],
+    "license": "MIT",
+    "require": {
+        "geraintluff/jsv4": "~1.0",
+        "silex/silex": "~1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "symfony/browser-kit": "~2.6"
+    },
+    "autoload": {
+        "psr-4": { "JDesrosiers\\Silex\\Provider\\": "src/" }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors"
+    },
+    "authors": [
+        {
+            "name": "Jason Desrosiers",
+            "email": "jdesrosi@gmail.com"
+        }
+    ]
+}
