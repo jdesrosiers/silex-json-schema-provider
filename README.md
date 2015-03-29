@@ -1,5 +1,8 @@
 silex-json-schema-provider
 ==========================
+[![Build Status](https://travis-ci.org/jdesrosiers/silex-json-schema-provider.svg)](https://travis-ci.org/jdesrosiers/silex-json-schema-provider)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jdesrosiers/silex-json-schema-provider/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jdesrosiers/silex-json-schema-provider/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/jdesrosiers/silex-json-schema-provider/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/jdesrosiers/silex-json-schema-provider/?branch=master)
 
 silex-json-schema-provider is a Silex service provider for working with JSON Schema.
 
