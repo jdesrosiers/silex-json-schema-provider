@@ -86,6 +86,6 @@ $app->put("/foo/{id}", function ($id) use ($app) {
     $app["fooRespository"]->save($id, $data);
 
     $app["json-schema.describedBy"] = "/schema/foo";
-    return JsonResponse::create($data, $isCreated ? Response::HTTP_CREATED : Response::HTTP_NO_CONTENT);
+    return JsonResponse::create($data, $isCreated ? Response::HTTP_CREATED : Response::HTTP_OK);
 });
 ```
