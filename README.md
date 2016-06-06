@@ -12,7 +12,7 @@ Install the silex-json-schema-provider using [composer](http://getcomposer.org/)
 [sematic versioning](http://semver.org/).
 
 ```bash
-composer require jdesrosiers/silex-json-schema-provider "~0.1"
+composer require jdesrosiers/silex-json-schema-provider "~1.0"
 ```
 
 Parameters

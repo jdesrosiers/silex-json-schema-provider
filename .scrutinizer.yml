@@ -1,7 +1,15 @@
 filter:
     excluded_paths: [vendor/*]
 
+checks:
+    php:
+        code_rating: true
+        duplication: true
+
 build:
+    environment:
+        php:
+            version: 5.5.12
     tests:
         override:
             -
