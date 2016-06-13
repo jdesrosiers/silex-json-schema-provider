@@ -72,7 +72,7 @@ Full Example
 ```php
 $app["json-schema.schema-store"]->add("/schema/foo", $app["schemaRepository"]->fetch("foo"));
 
-$app->put("/foo/{id}", function ($id) use ($app) {
+$app->put("/foo/{id}", function (Request $request, $id) use ($app) {
     $data = json_decode($request->getContent());
 
     $schema = $app["json-schema.schema-store"]->get("/schema/foo");
@@ -83,7 +83,7 @@ $app->put("/foo/{id}", function ($id) use ($app) {
     }
 
     $isCreated = !$app["fooRepository"]->contains($id);
-    $app["fooRespository"]->save($id, $data);
+    $app["fooRepository"]->save($id, $data);
 
     $app["json-schema.describedBy"] = "/schema/foo";
     return JsonResponse::create($data, $isCreated ? Response::HTTP_CREATED : Response::HTTP_OK);
