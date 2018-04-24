@@ -17,7 +17,7 @@ composer require jdesrosiers/silex-json-schema-provider "~1.0"
 
 Parameters
 ----------
-* **json-schema.correlationMechanism**: ("profile" or "link")  Defaults to "profile".
+* **json-schema.correlationMechanism**: ("profile" or "link")  Defaults to "link".
 * **json-schema.describedBy**: (string) A URI identifying the location of a schema that describes the response.
 
 Services

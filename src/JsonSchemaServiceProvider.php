@@ -17,7 +17,7 @@ class JsonSchemaServiceProvider implements ServiceProviderInterface, BootablePro
 
     public function register(Container $app)
     {
-        $app["json-schema.correlationMechanism"] = "profile";
+        $app["json-schema.correlationMechanism"] = "link";
 
         $app["json-schema.schema-store"] = function () {
             return new SchemaStore();

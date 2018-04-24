@@ -24,6 +24,8 @@ class DescribedByTest extends PHPUnit_Framework_TestCase
 
     public function testDescribedByProfile()
     {
+        $this->app["json-schema.correlationMechanism"] = "profile";
+
         $this->app->get("/foo", function (Application $app) {
             $app["json-schema.describedBy"] = "/schema/foo";
 
