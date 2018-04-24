@@ -16,7 +16,7 @@ class DescribedBy
                 $contentType = $response->headers->get("Content-Type");
                 $response->headers->set("Content-Type", "$contentType; profile=\"{$app["json-schema.describedBy"]}\"");
             } elseif ($app["json-schema.correlationMechanism"] === "link") {
-                $response->headers->set("Link", "<{$app["json-schema.describedBy"]}>; rel=\"describedBy\"", false);
+                $response->headers->set("Link", "<{$app["json-schema.describedBy"]}>; rel=\"describedby\"", false);
             } else {
                 $errorMessage = "json-schema.correlationMechanism must be either \"profile\" or \"link\"";
                 throw new ServiceUnavailableHttpException(null, $errorMessage);

@@ -57,7 +57,7 @@ class DescribedByTest extends PHPUnit_Framework_TestCase
         $response = $this->client->getResponse();
 
         $this->assertEquals(Response::HTTP_OK, $response->getStatusCode());
-        $this->assertEquals("</schema/foo>; rel=\"describedBy\"", $response->headers->get("Link"));
+        $this->assertEquals("</schema/foo>; rel=\"describedby\"", $response->headers->get("Link"));
     }
 
     public function testInvalidCorrelationMechanism()
